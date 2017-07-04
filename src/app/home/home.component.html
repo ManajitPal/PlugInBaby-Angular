@@ -5,7 +5,7 @@
       <div class="container">
         <div class="nav-left">
           <a class="nav-item">
-            <img src="images/bulma-type-white.png" alt="Logo">
+            <img src="assets/img/logo-mark.png" alt="Logo">
           </a>
         </div>
         <span class="nav-toggle" (click)="toggleNav = !toggleNav;" [ngClass]="{'is-active':toggleNav}">
@@ -14,21 +14,17 @@
           <span></span>
         </span>
         <div class="nav-right nav-menu" [ngClass]="{'is-active':toggleNav}">
-          <a class="nav-item is-active">
-            Home
-          </a>
-          <a class="nav-item">
-            Examples
-          </a>
-          <a class="nav-item">
-            Documentation
-          </a>
           <span class="nav-item">
-            <a class="button is-success is-inverted">
+            <a class="button">
               <span class="icon">
-                <i class="fa fa-github"></i>
+                <i class="fa fa-map-marker"></i>
               </span>
-              <span>Download</span>
+              <span>LOCATION</span>
+            </a>
+          </span>
+          <span class="nav-item">
+            <a class="button">
+              <span> LOGIN / SIGNUP</span>
             </a>
           </span>
         </div>
@@ -38,18 +34,37 @@
 
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
+    <div class="overlay"></div>
+
+					<video autoplay loop muted class="headervid">
+						<source src="assets/vid/bg.mp4" type="video/mp4" />
+						<source src="assets/vid/bg.ogg" type="video/ogg" />
+						<p>Your browser doesn't support video</p>
+					</video>
     <div class="container has-text-centered">
-      <h1 class="title">
-        Title
-      </h1>
-      <h2 class="subtitle">
-        Subtitle
-      </h2>
+      <div class="parent"><img src="assets/img/bg.png" /></div>
+      <div class="field has-addons has-addons-centered">
+      <p class="control has-icons-left">
+        <input class="input" type="text" placeholder="Search musicians, cafes, pubs...">
+        <span class="icon is-small is-left">
+          <i class="fa fa-search"></i>
+        </span>
+      </p>
+      <p class="control">
+        <span class="select">
+          <select>
+            <option>MUSICIANS</option>
+            <option>CAFES</option>
+            <option>RESTAURANTS</option>
+          </select>
+        </span>
+      </p>
+    </div>
     </div>
   </div>
 
   <!-- Hero footer: will stick at the bottom -->
-  <div class="hero-foot">
+  <!--<div class="hero-foot">
     <nav class="tabs is-boxed is-fullwidth">
       <div class="container">
         <ul>
@@ -62,5 +77,5 @@
         </ul>
       </div>
     </nav>
-  </div>
+  </div>-->
 </section>
