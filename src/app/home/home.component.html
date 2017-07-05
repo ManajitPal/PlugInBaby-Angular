@@ -43,6 +43,7 @@
 					</video>
     <div class="container has-text-centered">
       <div class="parent"><img src="assets/img/bg.png" /></div>
+      <br/>
       <div class="field has-addons has-addons-centered">
       <p class="control has-icons-left">
         <input class="input" type="text" placeholder="Search musicians, cafes, pubs...">
@@ -79,3 +80,104 @@
     </nav>
   </div>-->
 </section>
+<nav class="nav has-shadow scroll-animate" [ngClass]= "{'page-scroll-header': isScrolled}">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item is-hidden-desktop">
+        <img src="assets/img/logo-mark.png" alt="PlugInBaby logo">
+      </a>
+      <a class="nav-item is-hidden-mobile">
+        <div class="field has-addons has-addons-centered">
+          <p class="control has-icons-left">
+            <input class="input" type="text" placeholder="Search musicians, cafes, pubs...">
+            <span class="icon is-small is-left">
+              <i class="fa fa-search"></i>
+            </span>
+          </p>
+          <p class="control">
+            <span class="select">
+              <select>
+                <option>MUSICIANS</option>
+                <option>CAFES</option>
+                <option>RESTAURANTS</option>
+              </select>
+            </span>
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="nav-center">
+    <a class="nav-item">
+      <img src="assets/img/logo.png" alt="PlugInBaby logo">
+    </a>
+    </div>
+    <span class="nav-toggle" (click)="toggleNav = !toggleNav;" [ngClass]="{'is-active':toggleNav}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu" [ngClass]="{'is-active':toggleNav}">
+      <span class="nav-item">
+      <a class="button">
+              <span class="icon">
+                <i class="fa fa-map-marker"></i>
+              </span>
+              <span>LOCATION</span>
+      </a>
+      </span>
+      <span class="nav-item">
+      <a class="button">
+              <span> LOGIN / SIGNUP</span>
+      </a>
+      </span>
+    </div>
+  </div>
+</nav>
+<div class="columns is-mobile">
+  <div class="column is-4">
+    <div class="block">
+
+      <h3 class="title is-4">OPENINGS</h3>
+       <p class="control">
+            <span class="select">
+              <select>
+                <option>MUSICIANS</option>
+                <option>CAFES</option>
+                <option>RESTAURANTS</option>
+              </select>
+            </span>
+          </p>
+    </div>
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
+    
+  </div>
+  <div class="column auto">
+
+    
+  </div>
+</div>

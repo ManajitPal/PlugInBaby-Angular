@@ -1,6 +1,7 @@
 @import '../../mq'
 
 .button
+    margin-top: 5px
     border: 1px solid #f0f0f0
     border-radius: 34px
     color: #f0f0f0
@@ -82,6 +83,8 @@
             border-bottom-left-radius: 30px
             &:focus + .icon
                 color: #f0f0f0
+            &:focus
+                color: #f0f0f0
         
         .select
             select
@@ -92,5 +95,41 @@
                 option
                     color: #f0f0f0
                     background-color: #2a2a2a
+                    &:hover
+                        color: #f0f0f0
+                        background-color: #e040fb
+                &:after
+                    color: #f0f0f0
                     
 
+.page-scroll-header
+    position: fixed
+    top: 0
+    z-index: 3000
+    margin: auto
+    width: 100%
+    background: #2a2a2a
+
+.scroll-animate
+    transition: page-scroll-header 2s ease-out
+
+.nav-toggle
+    &:hover
+        background-color: #2a2a2a
+    span 
+        background-color: #f0f0f0
+
+.nav-right
+    padding-bottom: 10px
+    +mobile
+        background-color: #e040fb
+
+.nav-center
+    .nav-item
+        img
+            max-height: 3rem
+
+.is-4
+    .block
+        .control
+            display: inline
