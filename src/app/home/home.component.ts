@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
         '(window:scroll)': 'updateHeader($event)'
     }
 })
+
 export class HomeComponent implements OnInit {
   
     isScrolled = false;
@@ -18,6 +19,44 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      jobOpening: any[] = [
+    {
+      "eventName": "Title",      
+      "address":"First Line",
+      "place":"Second Line",
+      "date":"Date",
+      "link":"http://manajitpal.online"
+
+    },
+    {
+      "eventName": "Title",      
+      "address":"First Line",
+      "place":"Second Line",
+      "date":"Date",
+      "link":"http://manajitpal.online"
+    },
+    {
+      "eventName": "Title",      
+      "address":"First Line",
+      "place":"Second Line",
+      "date":"Date",
+      "link":"http://manajitpal.online"
+    },
+    {
+      "eventName": "Title",      
+      "address":"First Line",
+      "place":"Second Line",
+      "date":"Date",
+      "link":"http://manajitpal.online"
+    },
+    {
+      "eventName": "Title",      
+      "address":"First Line",
+      "place":"Second Line",
+      "date":"Date",
+      "link":"http://manajitpal.online"
+    }
+  ];
   }
 
   updateHeader(evt) {

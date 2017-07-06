@@ -80,7 +80,8 @@
     </nav>
   </div>-->
 </section>
-<nav class="nav has-shadow scroll-animate" [ngClass]= "{'page-scroll-header': isScrolled}">
+<nav class="nav has-shadow initial-header" [ngClass]= "{'page-scroll-header': isScrolled}">
+  
   <div class="container">
     <div class="nav-left">
       <a class="nav-item is-hidden-desktop">
@@ -107,9 +108,9 @@
       </a>
     </div>
     <div class="nav-center">
-    <a class="nav-item">
-      <img src="assets/img/logo.png" alt="PlugInBaby logo">
-    </a>
+      <a class="nav-item">
+        <img src="assets/img/logo.png" alt="PlugInBaby logo">
+      </a>
     </div>
     <span class="nav-toggle" (click)="toggleNav = !toggleNav;" [ngClass]="{'is-active':toggleNav}">
       <span></span>
@@ -133,51 +134,60 @@
     </div>
   </div>
 </nav>
-<div class="columns is-mobile">
+<div class="columns">
   <div class="column is-4">
     <div class="block">
-
-      <h3 class="title is-4">OPENINGS</h3>
-       <p class="control">
-            <span class="select">
-              <select>
-                <option>MUSICIANS</option>
-                <option>CAFES</option>
-                <option>RESTAURANTS</option>
-              </select>
-            </span>
+      <div class="columns is-mobile"> 
+        <div class="column is-7">
+          <p class="notification title is-4">
+            OPENINGS
           </p>
-    </div>
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum
-    
+        </div>
+        <div class="column is-5 button-pad">
+          <div class="notification">
+            <p class="control">
+              <span class="select">
+                <select>
+                  <option class="title is-6" hidden>SORT BY</option>
+                  <option class="title is-6">NEWEST</option>
+                  <option>OLDEST</option>
+                  <option>POPULAR</option>
+                </select>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+   </div>
+    <div class="columns is-mobile" > 
+        <div class="column is-two-thirds">
+          <p class="notification">
+            <ul *ngFor="let job of jobOpening"><li>{{job.eventName}}</li></ul>
+            
+          </p>
+        </div>
+        <div class="column">
+          <p class="notification is-warning">Auto</p>
+        </div>
+      </div>
+   
   </div>
   <div class="column auto">
-
+    <div class="notification">
+Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+   Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem ipsum doler siut Lorem
+    </div>
     
   </div>
 </div>
